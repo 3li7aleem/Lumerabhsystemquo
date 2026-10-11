@@ -1,33 +1,32 @@
-# LUMERA Manufacturing Studio
+# LUMERA Manufacturing Studio — Atelier v3
 
-An Arabic RTL, mobile-friendly static manufacturing and costing studio for LUMERA metal-and-wood furniture.
+A premium Arabic RTL static manufacturing and costing studio for LUMERA metal-and-wood furniture.
 
 ## Features
 
-- Browse and search **150 furniture models**, with photos and model codes `LUM-001` through `LUM-150`.
-- Change dimensions, steel section and sheet sizes, kerf, labor/material prices, contingency and profit margin.
-- View estimated steel and wood BOMs, steel stock cutting plans, material utilization, and BHD estimates.
-- Export the workshop cutting list to CSV or save a six-page manufacturing report as PDF using the browser's print dialog.
-- **v2 improvements:** cleaner responsive interface, filtered-model count, keyboard-friendly catalog, per-model local save/restore, shareable model URLs, instant calculations and input/cutting-size validation.
+- Browse, search, and filter the catalog of **150 models**, `LUM-001`–`LUM-150`.
+- Edit dimensions, steel section, wood sheet size, material prices, allowances, and profit margin.
+- Estimate steel and wood BOM, steel stock cutting plans, material utilization, and BHD manufacturing costs.
+- Export a cutting list as CSV or print a **six-page A4 manufacturing PDF**.
+- Save/restore drafts per model on the current browser; share model-specific links.
+- Validate inputs and block manufacturing export for oversized cut pieces.
+- **v3 redesign:** branded hero section, guided workflow steps, clearer form sections and model catalog, responsive dashboard, readable mobile scrollable tables, and accessible controls.
 
-## Launch
+## Quick start
 
-Open `index.html` in a modern browser or publish this repository on GitHub Pages: **Settings → Pages → Build and deployment → Deploy from a branch → main → / (root)**.
+Open `index.html` in a modern web browser. Alternatively, turn on GitHub Pages: **Settings → Pages → Deploy from a branch → main → / (root)**. Assets and catalog data are included locally, so no build tools are required.
 
-The saved drafts use browser `localStorage` and exist on that device/browser only. This is **not** server-side project storage or an account login.
+## Important limitations and privacy
 
-## Manufacturing and privacy limitations
+**This is a public, client-only website.** It does **not** provide logins, backend storage, or confidentiality. Never embed private customer information or nonpublic supplier costs in this repository. Prices in code are illustrative only.
 
-- The workshop cutting lists and dimensions for designs other than the washer-reference model are **estimates**, not approved engineering drawings.
-- The wood nesting and steel optimization are heuristic estimates. Review all cuts and joins before manufacturing.
-- Demo prices are illustrative, not current supplier quotations.
-- This is a **public static repository and frontend**, and therefore **not a secure place for confidential factory costing or customer records**. Any values embedded in the HTML/JavaScript can be viewed by visitors. Keep sensitive company data in a private, authenticated back-office app.
-- PDF export invokes the browser print-to-PDF dialog; no server-side PDF engine is configured.
+For all furniture apart from the provided washer-shelf reference, dimension rules and cut lists are estimates based on category templates, **not verified production drawings**. OptimizeSheets/optimizeBars are heuristic approximations. Confirm actual dimensions, load capacity, joinery, nesting direction, fixings, and cut schedules before fabrication. PDFs are produced through the browser print dialog.
 
-## Example checked
+## QA reference
 
-The reference washer shelf design `REF-WASHER` produces an estimated steel net length of **15.880 m** and wood area **0.840 m²** with its default dimensions; verify the actual cutting plan on-site.
+With the supplied washer-shelf default configuration:
+- Steel: **15.880 m** net.
+- Wood: **0.840 m²** net.
+- Manufacturing PDF: **6 A4 pages**.
 
-## Updates
-
-v2 delivered with UX, responsiveness, validation, draft and PDF-print improvements.
+The repository includes the original 150 model images and LUMERA logo.
